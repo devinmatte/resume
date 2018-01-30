@@ -36,6 +36,7 @@
 \RequirePackage{dashrule}
 \RequirePackage{multirow,tabularx}
 \RequirePackage{changepage}
+\RequirePackage{hyperref}
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
