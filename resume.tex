@@ -35,10 +35,13 @@
 \definecolor{LightGrey}{HTML}{666666}
 \definecolor{DarkBlue}{HTML}{1c304b}
 \definecolor{LightBlue}{HTML}{2079c7}
+\definecolor{Purple}{HTML}{4e5266}
+\definecolor{DarkPurple}{HTML}{1E2037}
+\definecolor{LightPurple}{HTML}{656dba}
 %\colorlet{heading}{VividPurple}
-\colorlet{heading}{DarkBlue}
-\colorlet{heading-line}{LightBlue}
-\colorlet{accent}{DarkBlue}
+\colorlet{heading}{DarkPurple}
+\colorlet{heading-line}{LightPurple}
+\colorlet{accent}{Purple}
 \colorlet{emphasis}{SlateGrey}
 \colorlet{body}{LightGrey}
 
@@ -57,8 +60,8 @@
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{devin@devinmatte.com}
-  \phone{(203) 470-1323}
+  \email{\href{mailto:devin@devinmatte.com}{devin@devinmatte.com}}
+  \phone{\href{tel:12034701323}{(203) 470-1323}}
   \homepage{\href{https://devinmatte.com}{devinmatte.com}}
   \github{\href{https://github.com/devinmatte}{devinmatte}}
 %   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too
@@ -87,6 +90,10 @@
 
 \nocite{*}
 
+\cvproject{CSH Packet}{\href{https://github.com/ComputerScienceHouse/packet}{github.com/ComputerScienceHouse/packet}}{Packet is a web application used by Computer Science House to replace a paper signature system used when new members apply. The system keeps track of signatures, allows people to sign packets and calculates progress. Built using Python and Flask, with SQLAlchemy, FreeIPA LDAP and behind OIDC authentication.}
+
+\divider
+
 \cvproject{AWS Wrapper}{\href{https://github.com/SquashProjectTwo/AWS-Wrapper}{github.com/SquashProjectTwo/AWS-Wrapper}}{Created at Brickhack4, a web application that created a new UI interface for AWS, specifically EC2 by using Boto3 to immitate all the functions provided by EC2 in their current web interface. Won best use of AWS at the event.}
 
 \divider
@@ -96,10 +103,6 @@
 \divider
 
 \cvproject{wasp}{\href{https://github.com/devinmatte/wasp}{github.com/devinmatte/wasp}}{A command line utility for generating and managing web configuration files. Including the manifest.json, bower.json, package.json and composer.json. Built in Python, and packaged for Linux. Currently managing as a multiple contributor project.}
-
-\divider
-
-\cvproject{Coralite Woodworks LLC.}{\href{https://github.com/CoraliteWoodworks/coralitewoodworks.com}{github.com/CoraliteWoodworks/coralitewoodworks.com}}{Created and designed a website for Coralite Woodworks in Python using Flask and SQLAlchemy with a focus on search engine optimization.}
 
 % \cvsection{}{Volunteer}
 
