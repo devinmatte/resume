@@ -59,7 +59,7 @@
 \newcommand{\name}[1]{\def\@name{#1}}
 \newcommand{\tagline}[1]{\def\@tagline{#1}}
 \newcommand{\photo}[2]{\def\@photo{#2}\def\@photodiameter{#1}}
-\newcommand{\email}[1]{\printinfo{\emailsymbol}{#1}}
+\newcommand{\email}[1]{\printinfo{\mailsymbol}{#1}}
 \newcommand{\mailaddress}[1]{\printinfo{\mailsymbol}{#1}}
 \newcommand{\phone}[1]{\printinfo{\phonesymbol}{#1}}
 \newcommand{\homepage}[1]{\printinfo{\homepagesymbol}{#1}}
@@ -112,8 +112,17 @@
   \medskip
 }
 
-\newcommand{\cvproject}[5]{%
+\newcommand{\cvclub}[4]{%
   {\large\color{emphasis}#1\par}
+  \smallskip
+  \normalsize\textbf{\color{accent}#2}
+  | {\small#4}\par
+  \small{#3}\par
+  \medskip
+}
+
+\newcommand{\cvproject}[5]{%
+  {\large\color{emphasis}#1 | \small\color{accent}#4\par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
@@ -123,7 +132,7 @@
 }
 
 \newcommand{\cveventnew}[5]{%
-  {\large\color{emphasis}#1\par}
+  {\large\color{emphasis}#1  \par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
@@ -131,6 +140,16 @@
   \smallskip
   {\small\makebox[0.5\linewidth][l]{\faCalendar \hspace{0.5em}#4}%
   \ifstrequal{#5}{}{}{\makebox[0.5\linewidth][l]{\faMapMarker\hspace{0.5em}#5}}\par}
+  \medskip
+}
+
+\newcommand{\cvexperience}[4]{%
+  {\large\color{emphasis}#1  \par}
+  \smallskip
+  \textbf{\color{accent}#2 | \small\makebox[0.5\linewidth][l]{\faCalendar\space#4}}\par
+  \smallskip
+  \textbf{\small\color{body}#3}\par
+  \smallskip
   \medskip
 }
 
