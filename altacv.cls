@@ -146,7 +146,7 @@
 \newcommand{\cvexperience}[4]{%
   {\large\color{emphasis}#1  \par}
   \smallskip
-  \textbf{\color{accent}#2 | \small\makebox[0.5\linewidth][l]{\faCalendar\space#4}}\par
+  \textbf{\color{accent}#2} | \small\space#4\par
   \smallskip
   \textbf{\small\color{body}#3}\par
   \smallskip
