@@ -146,9 +146,18 @@
 \newcommand{\cvexperience}[4]{%
   {\large\color{emphasis}#1  \par}
   \smallskip
-  \textbf{\color{accent}#2} | \small\space#4\par
+  {\normalsize\textbf{\color{accent}#2}} | {\small\space#4}\par
   \smallskip
   \textbf{\small\color{body}#3}\par
+  \smallskip
+  \medskip
+}
+
+\newcommand{\morecvexperience}[3]{%
+  \smallskip
+  {\normalsize\textbf{\color{accent}#1}} | {\small\space#3}\par
+  \smallskip
+  \textbf{\small\color{body}#2}\par
   \smallskip
   \medskip
 }
