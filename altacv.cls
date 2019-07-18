@@ -78,12 +78,10 @@
     {\Huge\bfseries\MakeUppercase{\@name}\par}
     \medskip
     {\large\bfseries\color{accent}\@tagline\par}
-    \medskip
-    {\footnotesize\bfseries\@personalinfo\par}
     \ifdef{\@photodiameter}{%
     \end{minipage}\hfill%
     \begin{minipage}{\@photodiameter}
-    \tikz\path[fill overzoom image={\@photo}]circle[radius=0.5\linewidth];
+    {\footnotesize\bfseries\@personalinfo\par}
     \end{minipage}\par}{}%
   \endgroup\medskip
 }
@@ -116,18 +114,17 @@
   {\large\color{emphasis}#1\par}
   \smallskip
   \normalsize\textbf{\color{accent}#2}
-  | {\small#4}\par
+  | {\textbf{\small#4}}\par
   \small{#3}\par
-  \medskip
+  \smallskip
 }
 
 \newcommand{\cvproject}[5]{%
-  {\large\color{emphasis}#1 | \small\color{accent}#4\par}
+  {\large\color{emphasis}#1 | \textbf{\small\color{accent}#4}\par}
   \smallskip
   \textbf{\color{accent}#2}\par
   \smallskip
-  \textbf{\small\color{body}#3}\par
-  \smallskip
+  \small\color{body}#3\par
   \medskip
 }
 
@@ -146,19 +143,17 @@
 \newcommand{\cvexperience}[4]{%
   {\large\color{emphasis}#1  \par}
   \smallskip
-  {\normalsize\textbf{\color{accent}#2}} | {\small\space#4}\par
+  {\normalsize\textbf{\color{accent}#2} | {\textbf{\small\space#4}}\par}
   \smallskip
-  \textbf{\small\color{body}#3}\par
-  \smallskip
+  \small\color{body}#3\par
   \medskip
 }
 
 \newcommand{\morecvexperience}[3]{%
   \smallskip
-  {\normalsize\textbf{\color{accent}#1}} | {\small\space#3}\par
+  {\normalsize\textbf{\color{accent}#1} | {\textbf{\small\space#3}}\par}
   \smallskip
-  \textbf{\small\color{body}#2}\par
-  \smallskip
+  \small\color{body}#2\par
   \medskip
 }
 
