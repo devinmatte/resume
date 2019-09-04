@@ -55,17 +55,19 @@
 
 \begin{document}
 \name{DEVIN MATTÉ}
-\tagline{Full-Stack Software Engineer}
-\photo{3.5cm}{}
+\tagline{Full-Stack Software \& DevOps Engineer}
+\photo{4.9cm}{}
 % Cropped to square from my github page
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{\href{mailto:devin@devinmatte.com}{devin@devinmatte.com}}
-  \phone{\href{tel:12034701323}{(203) 470-1323}}
-  \homepage{\href{https://devinmatte.com}{devinmatte.com}}
-  \github{\href{https://github.com/devinmatte}{devinmatte}}
-%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too
+  \begin{flushright}
+    \normalsize
+    \email{\href{mailto:devin@devinmatte.com}{devin@devinmatte.com}}
+    \phone{\href{tel:12034701323}{(203) 470-1323}}
+    \homepage{\href{https://devinmatte.com}{devinmatte.com}}
+    \github{\href{https://github.com/devinmatte}{devinmatte}}
+  \end{flushright}
 }
 
 %% Make the header extend all the way to the right, if you want. Extend the right margin by 8cm (=6.8cm marginparwidth + 1.2cm marginparsep)
@@ -79,7 +81,8 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{Experience}
 
-\cvexperience{\href{https://www.constantcontact.com}{Constant Contact}}{Software Engineering Intern}{Worked on the ToolKit team creating the main customer facing campaigns page, social campaign inbox and the mailchimp import tool. Worked in Java with Springboot, and Javascript with React and Angular.js.}{Jun 2019 -- Aug 2019}
+\cvexperience{\href{https://www.constantcontact.com}{Constant Contact}}{Remote Software Engineering Intern}{Asked to continue work remotely to help build the new marketing calendar features, including Google Calendar and Outlook integrations. Worked in Java with Springboot, and Javascript with React.}{Aug 2019 -- Present}
+\morecvexperience{Software Engineering Intern}{Worked on the ToolKit team creating the main customer facing campaigns page, social campaign inbox and the mailchimp import tool. Worked in Java with Springboot, and Javascript with React and Angular.js.}{Jun 2019 -- Aug 2019}
 
 \cvexperience{\href{http://datto.com/}{Datto Inc.}}{Software Engineering Intern}{Worked on the Core Products and Universal Service Management teams. Built new backup features for their flagship product as well as web interfaces for restoring them in the web. Worked in PHP with Symfony, ZFS, Typescript, Javascript, Docker, ESX, Hyper-V and Windows Services.}{Jan 2019 -- May 2019}
 \morecvexperience{Software Engineering Intern}{Worked on the Admin Portal Team building the administrative portal for the company. Worked in PHP with Symfony, Javascript, MySQL, Apache, Docker, and Ubuntu.}{May 2018 -- Aug 2018}
@@ -90,15 +93,17 @@
 
 \nocite{*}
 
-\cvproject{CSH Packet}{\href{https://github.com/ComputerScienceHouse/packet}{github.com/ComputerScienceHouse/packet}}{Packet is a web application used by Computer Science House to replace a paper signature system used when new members apply. The system keeps track of signatures, allows people to sign packets and calculates progress. Built using Python and Flask, with SQLAlchemy, FreeIPA LDAP and behind OIDC authentication.}{Python}
+\cvproject{CSH Packet}{\href{https://github.com/ComputerScienceHouse/packet}{github.com/ComputerScienceHouse/packet}}{Packet is a web application used by Computer Science House to replace a paper signature system used when new members apply. The system keeps track of signatures, allows people to sign packets, sends push notifications and emails. Built using Python and Flask, with SQLAlchemy, FreeIPA LDAP and behind OIDC auth.}{Python}
 
 \cvproject{ScheduleMaker}{\href{https://github.com/ComputerScienceHouse/schedulemaker}{github.com/ComputerScienceHouse/schedulemaker}}{Maintain and contribute as the primary maintainer to an Open Source web app used by over 8,000 students each semester at RIT to build their class schedules. Implemented new features and improving the codebase using PHP and Angular.}{PHP}
 
-\cvproject{Openshift (OKD) Cluster}{\href{https://devinmatte.me/deploying-openshift}{devinmatte.me/deploying-openshift}}{Stood up a fully functional, multi-user Openshift Origin Cluster. The cluster is built of 15 nodes, 5 master, 5 etcd, and a load balancer. The cluster supports over 100 projects currently including our GitLab, Keycloak SSO, and s3 instances.}{DevOps}
+\cvproject{OpenShift (OKD) Cluster}{\href{https://devinmatte.me/deploying-openshift}{devinmatte.me/deploying-openshift}}{Stood up a fully functional, multi-user OpenShift Origin Cluster. The cluster is built of 15 nodes, 5 master, 5 etcd, and a load balancer. The cluster supports over 100 projects currently including our GitLab, Keycloak SSO, and s3 instances.}{DevOps}
 
-\cvproject{AWS Wrapper}{\href{https://github.com/SquashProjectTwo/AWS-Wrapper}{github.com/SquashProjectTwo/AWS-Wrapper}}{Created at Brickhack4, a web application that created a new UI interface for AWS, specifically EC2 by using Boto3 to immitate all the functions provided by EC2 in their current web interface. Won best use of AWS at the event.}{Python}
+\cvproject{DEaDASS}{\href{https://github.com/ComputerScienceHouse/DEaDASS-UI}{github.com/ComputerScienceHouse/DEaDASS-UI}}{Standing up a FrontEnd React application to interact with our Java Spring backend for managing databases for all of Computer Science House. Built with Javascript React, along with working with MySQL, PostgreSQL, MongoDB and Java Spring.}{Javascript}
 
-\cvproject{Calendar Maker}{\href{https://github.com/NHSTechTeam/Calendar-Maker}{github.com/NHSTechTeam/Calendar-Maker}}{Built a calendar generator for the high school I attended. Designed a PHP web app that generated a csv file for import into Google calendar by students and faculty. Still maintaining and hosting for the school.}{PHP}
+% \cvproject{AWS Wrapper}{\href{https://github.com/SquashProjectTwo/AWS-Wrapper}{github.com/SquashProjectTwo/AWS-Wrapper}}{Created at Brickhack4, a web application that created a new UI interface for AWS, specifically EC2 by using Boto3 to immitate all the functions provided by EC2 in their current web interface. Won best use of AWS at the event.}{Python}
+
+% \cvproject{Calendar Maker}{\href{https://github.com/NHSTechTeam/Calendar-Maker}{github.com/NHSTechTeam/Calendar-Maker}}{Built a calendar generator for the high school I attended. Designed a PHP web app that generated a csv file for import into Google calendar by students and faculty. Still maintaining and hosting for the school.}{PHP}
 
 % \cvsection{}{Volunteer}
 

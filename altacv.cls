@@ -15,7 +15,7 @@
 \LoadClass{article}
 
 \RequirePackage[margin=2cm]{geometry}
-\RequirePackage{fontawesome,academicons}
+\RequirePackage{fontawesome}
 \RequirePackage{xcolor}
 
 \colorlet{accent}{blue!70!black}
@@ -49,7 +49,6 @@
 \newcommand{\linkedinsymbol}{\faLinkedin}
 \newcommand{\twittersymbol}{\faTwitter}
 \newcommand{\githubsymbol}{\faGithub}
-\newcommand{\orcidsymbol}{\aiOrcid}
 \newcommand{\mailsymbol}{\faEnvelope}
 \newcommand{\certificatesymbol}{\faCertificate}
 \newcommand{\certsymbol}{\faFileText}
@@ -110,6 +109,14 @@
   \medskip
 }
 
+\newcommand{\cveducation}[3]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip
+  \normalsize\textbf{\color{accent}#2}
+  | {\textbf{\small#3}}\par
+  \medskip
+}
+
 \newcommand{\cvclub}[4]{%
   {\large\color{emphasis}#1\par}
   \smallskip
@@ -150,7 +157,6 @@
 }
 
 \newcommand{\morecvexperience}[3]{%
-  \smallskip
   {\normalsize\textbf{\color{accent}#1} | {\textbf{\small\space#3}}\par}
   \smallskip
   \small\color{body}#2\par
